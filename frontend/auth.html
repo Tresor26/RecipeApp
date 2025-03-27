@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriPlan - Sign In/Up</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-tabs">
+            <button class="tab-btn active" data-tab="login">Sign In</button>
+            <button class="tab-btn" data-tab="register">Sign Up</button>
+        </div>
+
+        <div id="login" class="tab-content active">
+            <h2>Welcome Back</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+            </form>
+        </div>
+
+        <div id="register" class="tab-content">
+            <h2>Create Your Account</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirm">Confirm Password</label>
+                    <input type="password" id="registerConfirm" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

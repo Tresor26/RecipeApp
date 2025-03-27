@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Recipes - NutriPlan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo">NutriPlan</div>
+        <div class="nav-links">
+            <a href="profile.html">Profile</a>
+            <a href="mealplan.html">Meal Plan</a>
+            <a href="recipes.html" class="active">Find Recipes</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Find Recipes By Ingredients</h1>
+        
+        <div class="search-box">
+            <input type="text" id="ingredientsInput" placeholder="Enter ingredients (comma separated)">
+            <button id="searchRecipes" class="btn">Search</button>
+        </div>
+        
+        <div class="filters">
+            <select id="dietFilter">
+                <option value="">All Diets</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="gluten-free">Gluten-Free</option>
+            </select>
+            <select id="sortBy">
+                <option value="popularity">Sort by Popularity</option>
+                <option value="calories">Sort by Calories</option>
+                <option value="protein">Sort by Protein</option>
+            </select>
+        </div>
+        
+        <div id="recipeResults" class="recipe-grid">
+            <!-- Recipes will be loaded here -->
+            <div class="placeholder">
+                <i class="fas fa-utensils"></i>
+                <p>Enter ingredients to find delicious recipes</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recipe Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="js/recipes.js"></script>
+</body>
+</html>
