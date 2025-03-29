@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         try {
-            const response = await fetch(`http://localhost:4000/api/recipes?ingredients=${ingredients}&diet=${diet}&sort=${sortBy}`, {
+            const response = await fetch(`http://localhost:3000/api/recipes?ingredients=${ingredients}&diet=${diet}&sort=${sortBy}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const modalContent = document.getElementById('modalContent');
             modalContent.innerHTML = '<div class="loading">Loading recipe details...</div>';
             
-            const response = await fetch(`http://localhost:4000/api/recipes/${recipeId}`, {
+            const response = await fetch(`http://localhost:3000/api/recipes/${recipeId}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }

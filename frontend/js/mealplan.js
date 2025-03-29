@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             mealPlanContainer.innerHTML = '<div class="loading">Loading meal plan...</div>';
             
-            const response = await fetch('http://localhost:4000/api/mealplan', {
+            const response = await fetch('http://localhost:3000/api/mealplan', {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
