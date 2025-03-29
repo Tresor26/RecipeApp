@@ -13,7 +13,7 @@ const recipeRoutes = require('./routes/recipeRoutes');
 
 const app = express()
 
-const allowedOrigins = ["http://localhost:5500", "http://127.0.0.1:5500"];
+const allowedOrigins = ["http://localhost:5500", "http://127.0.0.1:5500", "http://44.212.13.205:3000", "http://web01.tresorshingiro.tech", "https://web01.tresorshingiro.tech"];
 
 app.use(cors({
     origin: function (origin, callback) {
